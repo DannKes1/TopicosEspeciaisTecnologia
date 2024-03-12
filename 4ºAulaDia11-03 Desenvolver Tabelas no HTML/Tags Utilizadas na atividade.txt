@@ -1,0 +1,148 @@
+Tags Utilizadas na atividade
+
+<tr> </tr> - essa tag representa uma linha - uso essas tags para cria-las
+
+<td> </td> - essa tag representa uma célula - uso essa tags para cria-las 
+
+<table> </table> - usa se essa tag para criar uma tabela
+
+<th> </th> - usa se essa tag para criar um titulo, ele ficará em negrito
+
+*TAGS ESTRUTURAIS* ------------------------------------------------------------------------
+
+<thead></thead> – Esta tag representa o cabeçalho da tabela, geralmente composta por células título;
+
+<tbody></tbody> – Essa tag representa o corpo da tabela;
+
+<tfoot></tfoot> – Essa tag representa o rodapé da tabela
+--------------------------------------------------------------------------------------------
+
+O colspan=”x” vai fazer uma mesclagem de colunas, e o rowspan=”x” vai mesclar linhas,
+bastando substituir o x pelo número de colunas ou linhas que deseja ocupar
+---------------------------------------------------------------------------------------------
+A tabela HTML tem uma tag particular para definir um título. Essa tag é
+a <caption></caption>. Em contraste com os demais elementos da tabela, a
+tag <caption> não será composta por células, portanto ficará acima da tabela,
+como um título
+----------------------------------------------------------------------------------------------
+Existe um elemento muito importante que nos permite
+criar um grupo de colunas, podendo assim estilizar diversas colunas de uma
+só vez. Esse elemento é a tag <colgroup></colgroup>
+-----------------------------------------------------------------------------------------------
+
+exemplo de código fazendo uma tabela: 
+
+<table border = 1>
+<tr> 
+<th>Nome</th>
+ <th>Idade</th> 
+ <th>Profissao</th> 
+</tr>
+<tr> 
+    <td>Daniel</td>
+     <td>22</td>
+      <td>Estudante</td> 
+</tr>
+<tr> 
+    <td>Pedro</td> 
+    <td>20</td> 
+    <td>Designer</td> 
+</tr>
+</table>
+
+
+exemplo de código fazendo uma uma mesclagem de colunas:
+para isso usamos o colspan = "numero de coluna/linhas"
+
+<table border="1">
+    <tr>
+    <th>Nome</th>
+    <th colspan="2">Telefones</th>  --> NESTE EXEMPLO ESTAMOS MESCLANDO 2 COLUNAS 
+    </tr>
+    <tr>
+    <td>Ted</td>
+    <td>8888-8888</td>
+    <td>9999-9999</td>
+    </tr>
+    <tr>
+    <td>Junior</td>
+    <td>1111-1111</td>
+    <td>2222-2222</td>
+    </tr>
+   </table>
+
+
+exemplo de código fazendo uma uma mesclagem de linhas:
+para isso usamos o rowspan = "numero da coluna/linhas"
+
+<table border="1">
+<tr>
+ <th>Primeiro Nome:</th>
+ <td>Ted</td>
+</tr>
+<tr>
+ <th rowspan="2">Telefone:</th>    --> NESTE EXEMPLO ESTAMOS MESCLANDO 2 LINHAS 
+ <td>8888-8888</td>
+</tr>
+<tr>
+ <td>9999-9999</td>
+</tr>
+</table>
+
+
+exemplo de código definindo um título usando o caption
+usamos o código <caption></caption>.
+
+    <table border="1">
+        <caption>USANDO O CAPTION</caption>  --> DEFININDO O TÍTULO
+        <tr>
+         <th>Nome</th>
+         <th>Sobrenome</th>
+        </tr>
+        <tr>
+            <td>Ted</td>
+            <td>Junior</td>
+        </tr>
+        <tr>
+         <td>Ted</td>
+            <td>Neto</td>
+        </tr>
+       </table>
+
+Exemplo de código utilizando o colgroup e col
+No exemplo abaixo, as 03 colunas ficarao com cores diferentes, pois definimos as cores que são em sequencia
+
+ .vermelho{
+        background-color: red;
+        }
+        .amarelo{
+        background-color: yellow;
+        }
+        .azul{
+        background-color: blue;
+        }
+       </style>
+       <table border="1">
+        <colgroup>
+        <col class="vermelho">
+        <col class="amarelo">
+        <col class="azul">
+        </colgroup>
+        <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Profissao</th>
+        </tr>
+        <tr>
+        <td>Ted</td>
+        <td>22</td>
+        <td>Estudante</td>
+        </tr>
+        <tr>
+        <td>Junior</td>
+        <td>26</td>
+        <td>Escritor</td>
+        </tr>
+       </table>
+
+
