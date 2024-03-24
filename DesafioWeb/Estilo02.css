@@ -1,0 +1,61 @@
+body { /* Tudo que estiver no "BODY", */
+    background-color: #000000;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #444;
+    line-height: 1.5;
+    margin: 50;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+
+
+
+}
+
+p {/* Tudo que estiver no "Paragrafo", */
+    text-align: justify
+}
+
+.page-container {
+    width: 21cm;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2cm;
+    background-color: rgb(184, 179, 183);
+    border-radius: 10px;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    flex: 1;
+
+}
+
+h1, h2 {/* Tudo que estiver no "h1 e h2", */
+    color: rgb(85, 57, 68);
+}
+
+section { 
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-top: solid 1px green;
+
+
+}
+
+footer { /* Tudo que estiver no "footer", */
+    text-align: center;
+  
+    padding: 20px 0;
+    width: 100%;
+   
+}
+.borda-img{
+    border: 2px solid #ffffff; /* Define uma borda sólida de 2 pixels de largura com a cor preta */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+}
+
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura total da visualização do dispositivo */
+}
